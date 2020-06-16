@@ -1,0 +1,330 @@
+
+visakh@DESKTOP-ABM58HO MINGW64 ~
+$ git --version
+git version 2.27.0.windows.1
+
+visakh@DESKTOP-ABM58HO MINGW64 ~
+$ cd F:
+
+visakh@DESKTOP-ABM58HO MINGW64 /f
+$ cd personal
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal
+$ cd web dev
+bash: cd: too many arguments
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal
+$ cd Web\ Dev/
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev
+$ mkdir gittest
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev
+$ cd gittest/
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev/g
+$ touch index.html
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev/gittest
+$ touch app.js
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev/gittest
+$ git init
+Initialized empty Git repository in F:/Personal/Web Dev/gittest/.git/
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev/gittest (master)
+$ git config --global user.name 'visakh'
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev/gittest (master)
+$ git config --global user.email 'mailtovisakhv@gmail.com'
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev/gittest (master)
+$ git add index.html
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev/gittest (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        app.js
+
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev/gittest (master)
+$ git rm
+fatal: No pathspec was given. Which files should I remove?
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev/gittest (master)
+$ git rm --cached index.html
+rm 'index.html'
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev/gittest (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        app.js
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev/gittest (master)
+$ git add *.html
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev/gittest (master)
+$ git add .js
+fatal: pathspec '.js' did not match any files
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev/gittest (master)
+$ git add .
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev/gittest (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   app.js
+        new file:   index.html
+
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev/gittest (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   app.js
+        new file:   index.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev/gittest (master)
+$ git add index.html
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev/gittest (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   app.js
+        new file:   index.html
+
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev/gittest (master)
+$ git commit\The organization's mission to preserve world peace was complicated in its early decades by the Cold War between the United States and Soviet Union and their respective allies. Its missions have consisted primarily of unarmed military observers and lightly armed troops with primarily monitoring, reporting and confidence-building roles.[6] UN membership grew significantly following widespread decolonization beginning in the 1960s. Since then, 80 former colonies have gained independence, including 11 trust territories that had been monitored by the Trusteeship Council.[7] By the 1970s, the UN's budget for economic and social development programmes far outstripped its spending on peacekeeping. After the end of the Cold War, the UN shifted and expanded its field operations, undertaking a wide variety of complex tasks.[8]^C
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev/gittest (master)
+$ git commit
+[master (root-commit) ddd2d56] Initial Commit
+ 2 files changed, 44 insertions(+)
+ create mode 100644 app.js
+ create mode 100644 index.html
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev/gittest (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev/gittest (master)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev/gittest (master)
+$ git add .
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev/gittest (master)
+$ git commit -m 'Changes in app'
+[master 81f79cf] Changes in app
+ 2 files changed, 15 insertions(+)
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev/gittest (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev/gittest (master)
+$ touch .gitignore
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev/gittest (master)
+$ touch log.txt
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev/gittest (master)
+$ git add .
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev/gittest (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+        new file:   log.txt
+
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev/gittest (master)
+$ git rm .gitignore
+error: the following file has changes staged in the index:
+    .gitignore
+(use --cached to keep the file, or -f to force removal)
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev/gittest (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+        new file:   log.txt
+
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev/gittest (master)
+$ git stash
+Saved working directory and index state WIP on master: 81f79cf Changes in app
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev/gittest (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev/gittest (master)
+$ touch .gitignore
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev/gittest (master)
+$ git add .
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev/gittest (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev/gittest (master)
+$ mkdir dir1
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev/gittest (master)
+$ mkdir dir2
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev/gittest (master)
+$ git add .
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev/gittest (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+        new file:   dir1/app1.js
+
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev/gittest (master)
+$ git commit -m 'added new directory'
+[master 67eb33f] added new directory
+ 2 files changed, 3 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 dir1/app1.js
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev/gittest (master)
+$ git branch login
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev/gittest (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev/gittest (master)
+$ git checkout login
+Switched to branch 'login'
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev/gittest (login)
+$ touch login.html
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev/gittest (login)
+$ git add .
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev/gittest (login)
+$ git commit -m 'added login html file to login branch'
+[login 16792b0] added login html file to login branch
+ 1 file changed, 12 insertions(+)
+ create mode 100644 login.html
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev/gittest (login)
+$ git status
+On branch login
+nothing to commit, working tree clean
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev/gittest (login)
+$ git checkout master
+Switched to branch 'master'
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev/gittest (master)
+$ git checkout login
+Switched to branch 'login'
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev/gittest (login)
+$ git checkout master
+Switched to branch 'master'
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev/gittest (master)
+$ git merge login
+Updating 67eb33f..16792b0
+Fast-forward
+ login.html | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+ create mode 100644 login.html
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev/gittest (master)
+$ git commit -m merging
+On branch master
+nothing to commit, working tree clean
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev/gittest (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev/gittest (master)
+$ git remote add origin https://github.com/visakhvijayan/myappssample
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev/gittest (master)
+$ git remote
+origin
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev/gittest (master)
+$ git push -u origin master
+Enumerating objects: 16, done.
+Counting objects: 100% (16/16), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (16/16), 2.59 KiB | 883.00 KiB/s, done.
+Total 16 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/visakhvijayan/myappssample
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+visakh@DESKTOP-ABM58HO MINGW64 /f/personal/Web Dev/gittest (master)
+$
